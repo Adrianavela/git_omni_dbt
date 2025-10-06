@@ -1,0 +1,8 @@
+base_view: order_items
+label: Order Items
+
+joins:
+  inventory_items: {}
+  products:
+    distribution_centers: {}
+  users: {}
