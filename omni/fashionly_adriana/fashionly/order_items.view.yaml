@@ -27,3 +27,7 @@ dimensions:
 measures:
   count:
     aggregate_type: count
+
+  sale_price_sum:
+    sql: ${order_items.sale_price}
+    aggregate_type: sum
