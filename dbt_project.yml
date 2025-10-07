@@ -41,5 +41,4 @@ models:
     example:
       +materialized: table
     fashionly:
-      +schema: prod
       +materialized: table
