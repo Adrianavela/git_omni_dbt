@@ -2,7 +2,8 @@ version: 2
 
 sources:
   - name: fashionly
-    database: fashionly
+    database: cisconsulting-project
+    schema: fashionly
     tables:
       - name: distribution_centers
       - name: events 
