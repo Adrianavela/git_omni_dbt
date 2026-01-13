@@ -4,7 +4,6 @@ schema: fashionly
 dimensions:
   browser: {}
   city: {}
-  created_time: {}
   event_type: {}
   ip_address: {}
   postal_code: {}
@@ -12,6 +11,15 @@ dimensions:
   state: {}
   traffic_source: {}
   uri: {}
+
+  created_time:
+    timeframe_metadata:
+      date:
+        format: "%Y-%m-%d"
+      week:
+        format: "%Y' %U" #"%b-%d"
+      month:
+        format: "%Y-%m"
 
   id:
     format: ID
