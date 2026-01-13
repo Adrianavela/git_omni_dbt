@@ -5,7 +5,6 @@ dimensions:
   age: {}
   city: {}
   country: {}
-  created_time: {}
   email: {}
   first_name: {}
   gender: {}
@@ -16,6 +15,15 @@ dimensions:
   state: {}
   street_address: {}
   traffic_source: {}
+
+  created_time:
+    timeframe_metadata:
+      date:
+        format: "%Y-%m-%d"
+      week:
+        format: "%Y' %U" #"%b-%d"
+      month:
+        format: "%Y-%m"
 
   id:
     format: ID
