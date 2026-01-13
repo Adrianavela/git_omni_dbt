@@ -2,11 +2,19 @@
 schema: fashionly
 
 dimensions:
-  created_time: {}
   delivered_time: {}
   returned_time: {}
   sale_price: {}
   shipped_time: {}
+
+  created_time:
+    timeframe_metadata:
+      date:
+        format: "%Y-%m-%d"
+      week:
+        format: "%Y' %U" #"%b-%d"
+      month:
+        format: "%Y-%m"
 
   id:
     format: ID
