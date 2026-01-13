@@ -17,13 +17,7 @@ dimensions:
   traffic_source: {}
 
   created_time:
-    timeframe_metadata:
-      date:
-        format: "%Y-%m-%d"
-      week:
-        format: "%Y' %U" #"%b-%d"
-      month:
-        format: "%Y-%m"
+    sql: DATE (created_time)
 
   id:
     format: ID

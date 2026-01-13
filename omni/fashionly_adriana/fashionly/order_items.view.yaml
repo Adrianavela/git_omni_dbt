@@ -32,6 +32,13 @@ dimensions:
   user_id:
     format: ID
 
+  date_duration:
+    label: Date Duration
+    duration:
+      sql_start: ${order_items.created_time[date]}
+      sql_end: ${order_items.delivered_time[date]}
+      intervals: [ hours, days, weeks ]
+
 measures:
   count:
     aggregate_type: count
