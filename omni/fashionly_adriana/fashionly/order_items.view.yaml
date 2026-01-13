@@ -5,40 +5,16 @@ dimensions:
   sale_price: {}
 
   returned_time:
-    timeframe_metadata:
-      date:
-        format: "%Y-%m-%d"
-      week:
-        format: "%Y' %U" #"%b-%d"
-      month:
-        format: "%Y-%m"
+    sql: DATE (returned_time)
 
   shipped_time:
-    timeframe_metadata:
-      date:
-        format: "%Y-%m-%d"
-      week:
-        format: "%Y' %U" #"%b-%d"
-      month:
-        format: "%Y-%m"
+    sql: DATE (shipped_time)
 
   created_time:
-    timeframe_metadata:
-      date:
-        format: "%Y-%m-%d"
-      week:
-        format: "%Y' %U" #"%b-%d"
-      month:
-        format: "%Y-%m"
+    sql: DATE (created_time)
 
   delivered_time:
-    timeframe_metadata:
-      date:
-        format: "%Y-%m-%d"
-      week:
-        format: "%Y' %U" #"%b-%d"
-      month:
-        format: "%Y-%m"
+    sql: DATE (delivered_time)
 
   id:
     format: ID
